@@ -9,10 +9,35 @@
   <img src="/images/leaves.svg" alt="leaves" class="leaves" />
   <div class="learn-more-container">
     <img src="/images/man.png" alt="man" class="man" />
-    <button>Learn more</button>
+    <button
+      class="learn-more-btn"
+      on:click|preventDefault={(e) =>
+        document
+          .querySelectorAll(".learn-more-btn")[0]
+          .scrollIntoView({ behavior: "smooth" })}>Learn more</button
+    >
   </div>
 </section>
-<section class="mission" />
+<section class="mission">
+  <div class="mission-container">
+    <h1 class="mission-title">Our Mission</h1>
+    <hr />
+    <p class="mission-statement">
+      To create financial inclusion by providing efficient delivery of credit
+      facilities to micro, small and medium enterprises through a combination of
+      servicing methodologies with an ultimate objective of no bankable poor are
+      left behind”
+    </p>
+  </div>
+  <!-- <div class="img-container"> -->
+  <img src="/images/people.jpg" alt="people" class="people" />
+  <!-- <button class="explore-btn">Explore our stories</button> -->
+  <!-- </div> -->
+</section>
+<section class="values">
+  <h1 class="values-title">Our Core Values</h1>
+  <hr />
+</section>
 
 <style>
   section.title {
@@ -54,11 +79,11 @@
   }
   .man {
     width: 230px;
-    /* max-width: 40vh; */
   }
 
   button {
-    padding: 10px 70px;
+    height: 40px;
+    width: 220px;
     margin: 0;
     border-radius: 10px;
     border: none;
@@ -73,8 +98,54 @@
 
   section.mission {
     background-color: var(--white);
-    height: 100px;
     border-radius: 20px 20px 0px 0px;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+  }
+
+  .mission-container {
+    padding: 28px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mission-title {
+    margin-top: 32px;
+    margin-bottom: 30px;
+    line-height: 1rem;
+  }
+  hr {
+    height: 2px;
+    width: 8rem;
+    margin: 0;
+    background-color: var(--secondary);
+    opacity: 0.5;
+    border: none;
+  }
+
+  .mission-statement {
+    margin: 30px 0;
+
+    text-align: center;
+    font-style: italic;
+    opacity: 0.5;
+    font-size: 16px;
+  }
+
+  .img-container {
+    /* position: relative; */
+  }
+
+  .people {
+    width: 100%;
+  }
+
+  .explore-btn {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    margin: 0 -20px -110px 0;
   }
 </style>
