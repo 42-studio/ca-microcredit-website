@@ -1,9 +1,13 @@
 <script>
   import { page } from "$app/stores";
+
+  let y = 0;
 </script>
 
-<nav>
-  <a href="/">
+<svelte:window bind:scrollY={y} />
+
+<nav class:nav-shadow={y > 0}>
+  <a href="/" class="logo-nav-container">
     <img
       src="/images/logo.png"
       alt="C.A. Micro Credit Enterprise Logo"
@@ -61,9 +65,21 @@
 
 <style>
   nav {
+    top: 0;
+    position: sticky;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--background);
+    transition: all 200ms ease;
+    z-index: 100;
+  }
+
+  .logo-nav-container {
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
 
@@ -147,5 +163,12 @@
     .logo-footer {
       height: 100px;
     }
+  }
+
+  .nav-shadow {
+    box-shadow: 10px 3px 15px 6px rgba(0, 0, 0, 0.1),
+      -10px 3px 15px 6px rgba(0, 0, 0, 0.1);
+    padding: 12px 28px;
+    margin-bottom: 32px;
   }
 </style>
