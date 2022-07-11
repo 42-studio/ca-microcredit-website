@@ -1,0 +1,22 @@
+:root {
+	--background: rgba(252, 210, 15, 1);
+	--black: #321325;
+	--white: #FDFFFC;
+	--primary: #006B3D;
+	--secondary: #CF0921;
+}
+
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: var(--background);
+	margin: 0;
+	box-sizing: border-box;
+
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: 'Inter', sans-serif;
+}
