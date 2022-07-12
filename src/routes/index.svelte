@@ -14,9 +14,10 @@
 
 <section class="title">
   <h1>C.A. Micro Credit</h1>
-  <h2>supporting local<br />communities<br />in Ghana</h2>
-
+  <h2>supporting local<br />communities</h2>
   <img src="/images/leaves.svg" alt="leaves" class="leaves" />
+  <h2>in Ghana</h2>
+
   <div class="learn-more-container">
     <img src="/images/man.png" alt="man" class="man" />
     <button
@@ -41,7 +42,7 @@
   </div>
   <div class="img-container">
     <img src="/images/people.jpg" alt="people" class="people" />
-    <a href="/stories">
+    <a sveltekit:noscroll href="/stories">
       <button class="explore-btn">Explore our stories</button>
     </a>
   </div>
@@ -90,7 +91,7 @@
     >? Get in touch with us below
   </p>
   <br />
-  <a href="/contact">
+  <a sveltekit:noscroll href="/contact">
     <button class="vision-button">Contact us</button>
   </a>
 </section>
@@ -123,7 +124,7 @@
   .leaves {
     position: absolute;
     left: 0;
-    top: 250px;
+    /* top: 250px; */
     z-index: -1;
   }
 

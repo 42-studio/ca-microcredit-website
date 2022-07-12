@@ -1,13 +1,21 @@
+<script context="module">
+  /** @type {import('@sveltejs/kit').Load} */
+  export const load = async ({ url }) => ({ props: { url } });
+</script>
+
 <script>
   import { page } from "$app/stores";
+  import PageTransition from "../lib/components/PageTransition.svelte";
 
+  /** @type string */
+  export let url;
   let y = 0;
 </script>
 
 <svelte:window bind:scrollY={y} />
 
 <nav class:nav-shadow={y > 0}>
-  <a href="/" class="logo-nav-container">
+  <a href="/" class="logo-nav-container" sveltekit:noscroll>
     <img
       src="/images/logo.png"
       alt="C.A. Micro Credit Enterprise Logo"
@@ -15,19 +23,27 @@
     />
   </a>
   <div class="links">
-    <a href="/" style="opacity: {$page.url.pathname == '/' ? 1 : 0.5}">Home</a>
+    <a
+      href="/"
+      sveltekit:noscroll
+      style="opacity: {$page.url.pathname == '/' ? 1 : 0.5}">Home</a
+    >
     <a
       href="/stories"
+      sveltekit:noscroll
       style="opacity: {$page.url.pathname == '/stories' ? 1 : 0.5}">Stories</a
     >
     <a
       href="/contact"
+      sveltekit:noscroll
       style="opacity: {$page.url.pathname == '/contact' ? 1 : 0.5}">Contact</a
     >
   </div>
 </nav>
 
-<slot />
+<PageTransition {url}>
+  <slot />
+</PageTransition>
 
 <footer>
   <section class="top">
