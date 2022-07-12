@@ -89,6 +89,7 @@
       >C.A. Micro Credit Enterprise</span
     >? Get in touch with us below
   </p>
+  <br />
   <a href="/contact">
     <button class="vision-button">Contact us</button>
   </a>
@@ -318,6 +319,9 @@
 
   .vision-title {
     color: var(--white);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 1em;
   }
 
   .vision-text {
