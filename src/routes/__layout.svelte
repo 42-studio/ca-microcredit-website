@@ -43,41 +43,40 @@
 
 <PageTransition {url}>
   <slot />
+  <footer>
+    <section class="top">
+      <section class="left">
+        <p class="footer-title">C.A. Mirco Credit<br />Enterprise</p>
+        <p class="footer-paragraph">Some rights reserved</p>
+      </section>
+      <section class="right">
+        <img
+          src="/images/logo.png"
+          alt="C.A. Micro Credit Enterprise Logo"
+          class="logo-footer"
+        />
+      </section>
+    </section>
+    <hr />
+    <section class="bottom">
+      <section class="left">
+        <p class="footer-paragraph">© {new Date().getFullYear()}</p>
+      </section>
+      <section class="right">
+        <p class="footer-paragraph">
+          website by <a
+            class="footer-a"
+            href="https://joshlucpoll.dev"
+            target="_blank"
+            rel="noopener noreferrer">joshlucpoll</a
+          ><br /><a class="footer-a" target="_blank" href="https://icons8.com"
+            >icons by Icons8</a
+          >
+        </p>
+      </section>
+    </section>
+  </footer>
 </PageTransition>
-
-<footer>
-  <section class="top">
-    <section class="left">
-      <p class="footer-title">C.A. Mirco Credit<br />Enterprise</p>
-      <p class="footer-paragraph">Some rights reserved</p>
-    </section>
-    <section class="right">
-      <img
-        src="/images/logo.png"
-        alt="C.A. Micro Credit Enterprise Logo"
-        class="logo-footer"
-      />
-    </section>
-  </section>
-  <hr />
-  <section class="bottom">
-    <section class="left">
-      <p class="footer-paragraph">© {new Date().getFullYear()}</p>
-    </section>
-    <section class="right">
-      <p class="footer-paragraph">
-        website by <a
-          class="footer-a"
-          href="https://joshlucpoll.dev"
-          target="_blank"
-          rel="noopener noreferrer">joshlucpoll</a
-        ><br /><a class="footer-a" target="_blank" href="https://icons8.com"
-          >icons by Icons8</a
-        >
-      </p>
-    </section>
-  </section>
-</footer>
 
 <style>
   nav {
@@ -103,7 +102,6 @@
     display: block;
     text-align: right;
     line-height: 2rem;
-    font-size: 16px;
   }
   .links > * {
     margin-left: 20px;
@@ -157,34 +155,47 @@
     border: none;
   }
 
-  @media screen and (max-width: 600px) {
+  .nav-shadow {
+    box-shadow: 10px 3px 15px 6px rgba(0, 0, 0, 0.1),
+      -10px 3px 15px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  @media screen and (max-width: 800px) {
     nav {
       padding: 28px;
+      font-size: 16px;
     }
+    .nav-shadow {
+      padding: 12px 28px;
+      margin-bottom: 32px;
+    }
+
     .logo-nav {
       height: 45px;
     }
+
     .logo-footer {
       height: 60px;
     }
   }
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 800px) {
     nav {
-      padding: 28px;
+      padding: 60px;
+      font-size: 20px;
     }
+
+    .nav-shadow {
+      padding: 28px 60px;
+      margin-bottom: 64px;
+    }
+
     .logo-nav {
       height: 85px;
     }
+
     .logo-footer {
       height: 100px;
     }
-  }
-
-  .nav-shadow {
-    box-shadow: 10px 3px 15px 6px rgba(0, 0, 0, 0.1),
-      -10px 3px 15px 6px rgba(0, 0, 0, 0.1);
-    padding: 12px 28px;
-    margin-bottom: 32px;
   }
 </style>

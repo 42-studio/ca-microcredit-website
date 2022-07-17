@@ -32,17 +32,20 @@
 <section class="mission">
   <div class="mission-container">
     <h1 class="mission-title">Our Mission</h1>
-    <hr />
+    <hr class="mission-hr" />
     <p class="mission-statement">
       "To create financial inclusion by providing efficient delivery of credit
       facilities to micro, small and medium enterprises through a combination of
       servicing methodologies with an ultimate objective of no bankable poor are
       left behind”
     </p>
+    <a class="desktop-explore-btn" sveltekit:noscroll href="/stories">
+      <button class="explore-btn">Explore our stories</button>
+    </a>
   </div>
   <div class="img-container">
     <img src="/images/people.jpg" alt="people" class="people" />
-    <a sveltekit:noscroll href="/stories">
+    <a class="mobile-explore-btn" sveltekit:noscroll href="/stories">
       <button class="explore-btn">Explore our stories</button>
     </a>
   </div>
@@ -124,7 +127,7 @@
   .leaves {
     position: absolute;
     left: 0;
-    /* top: 250px; */
+    opacity: 0.5;
     z-index: -1;
   }
 
@@ -184,7 +187,6 @@
   .mission-title {
     margin-top: 20px;
     margin-bottom: 30px;
-    font-size: 30px;
     line-height: 1em;
   }
   hr {
@@ -232,6 +234,10 @@
     left: 0;
     right: 0;
     text-align: center;
+  }
+
+  .desktop-explore-btn {
+    display: none;
   }
 
   section.values {
@@ -334,5 +340,113 @@
 
   .vision-button {
     width: 120px;
+  }
+
+  @media screen and (min-width: 800px) {
+    button {
+      height: 55px;
+      width: 250px;
+      margin: 0;
+      border-radius: 14px;
+      border: none;
+      background-color: var(--primary);
+      box-shadow: 0px 3px 15px 6px rgba(0, 0, 0, 0.1);
+
+      color: var(--white);
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    h1,
+    h2 {
+      font-size: 68px;
+      line-height: 1.3em;
+    }
+
+    @media screen and (min-height: 950px) {
+      h1,
+      h2 {
+        font-size: 80px;
+        line-height: 1.3em;
+      }
+    }
+
+    section.title {
+      display: flex;
+      flex-direction: column;
+      padding: 0 60px;
+      min-height: calc(100vh - 250px);
+    }
+
+    .learn-more-container {
+      position: relative;
+      margin-top: 0;
+      min-height: 100%;
+      flex-grow: 1;
+    }
+
+    .learn-more-btn {
+      align-self: flex-end;
+      margin: 50px 0;
+    }
+
+    .man {
+      position: absolute;
+      bottom: -10vh;
+      left: 0;
+      width: 56vh;
+      z-index: -1;
+    }
+
+    .leaves {
+      height: 80vh;
+    }
+
+    section.mission {
+      display: flex;
+    }
+
+    .mission-container {
+      flex: 1;
+      padding: 60px;
+      align-items: flex-start;
+    }
+
+    hr {
+      height: 3px;
+    }
+
+    .mission-hr {
+      margin-top: 10px;
+      margin-bottom: 40px;
+      width: 30em;
+      align-self: flex-start;
+    }
+
+    .mission-statement {
+      text-align: left;
+      font-size: 24px;
+    }
+
+    .img-container {
+      border-radius: 0 20px 0 0;
+      flex: 1;
+      background-size: cover;
+      height: auto;
+    }
+
+    .desktop-explore-btn {
+      display: block;
+      margin-top: 40px;
+    }
+
+    .mobile-explore-btn {
+      display: none;
+    }
+
+    .explore-btn {
+      position: relative;
+    }
   }
 </style>
