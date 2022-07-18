@@ -69,8 +69,6 @@
             href="https://joshlucpoll.dev"
             target="_blank"
             rel="noopener noreferrer">joshlucpoll</a
-          ><br /><a class="footer-a" target="_blank" href="https://icons8.com"
-            >icons by Icons8</a
           >
         </p>
       </section>
@@ -201,5 +199,13 @@
     .logo-footer {
       height: 100px;
     }
+  }
+
+  footer {
+    font-size: 18px;
+  }
+
+  section.bottom {
+    font-size: 14px;
   }
 </style>
