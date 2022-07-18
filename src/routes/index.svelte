@@ -400,7 +400,8 @@
     }
 
     .leaves {
-      height: 80vh;
+      margin-top: calc(80vh - min(80vh, 70vw));
+      height: min(80vh, 70vw);
     }
 
     section.mission {
