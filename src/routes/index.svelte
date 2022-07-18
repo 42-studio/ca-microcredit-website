@@ -52,11 +52,12 @@
 </section>
 <section class="values">
   <h1 class="values-title">Our Core Values</h1>
-  <hr />
+  <hr class="values-hr" />
   <div class="values-container">
     {#each Object.entries(values) as [value, image], i}
       {#if i % 2}
         <div class="value-container">
+          <div class="value-spacer" />
           <div class="value-text">{value}</div>
           <div class="left-arrow">
             <img
@@ -76,6 +77,7 @@
             />
           </div>
           <div class="value-text">{value}</div>
+          <div class="value-spacer" />
         </div>
       {/if}
     {/each}
@@ -448,6 +450,48 @@
 
     .explore-btn {
       position: relative;
+    }
+
+    .values-hr {
+      margin: 40px 0;
+      width: 28em;
+    }
+
+    section.values {
+      padding: 0 80px;
+      margin-bottom: 100px;
+    }
+
+    .value-container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .value-text {
+      font-size: 32px;
+      width: auto;
+    }
+
+    .left-arrow,
+    .right-arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 150px;
+      background-color: var(--black);
+
+      transform: rotate(45deg);
+      box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+      border: none;
+    }
+
+    .value-icon {
+      height: 60px;
+      width: 60px;
+      left: 0 !important;
+
+      transform: rotate(-45deg);
     }
   }
 </style>
