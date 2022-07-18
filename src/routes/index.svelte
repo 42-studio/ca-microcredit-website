@@ -86,15 +86,17 @@
 <section class="vision">
   <h1 class="vision-title">Our Vision</h1>
   <hr />
-  <p class="vision-text">
-    The vision of C.A. Micro Credit Enterprise is to grow into a first class
-    universal bank
-  </p>
-  <p class="vision-text">
-    Interested in investing with <span style="font-weight: 600;"
-      >C.A. Micro Credit Enterprise</span
-    >? Get in touch with us below
-  </p>
+  <div class="vision-container">
+    <p class="vision-text">
+      The vision of C.A. Micro Credit Enterprise is to grow into a first class
+      universal bank
+    </p>
+    <p class="vision-text">
+      Interested in investing with <span style="font-weight: 600;"
+        >C.A. Micro Credit Enterprise</span
+      >? Get in touch with us below
+    </p>
+  </div>
   <br />
   <a sveltekit:noscroll href="/contact">
     <button class="vision-button">Contact us</button>
@@ -340,10 +342,6 @@
     line-height: 1.7em;
   }
 
-  .vision-button {
-    width: 120px;
-  }
-
   @media screen and (min-width: 800px) {
     button {
       height: 55px;
@@ -362,7 +360,7 @@
 
     h1,
     h2 {
-      font-size: 68px;
+      font-size: 60px;
       line-height: 1.3em;
     }
 
@@ -453,7 +451,8 @@
     }
 
     .values-hr {
-      margin: 40px 0;
+      margin-bottom: 40px;
+      margin-top: 10px;
       width: 28em;
     }
 
@@ -492,6 +491,11 @@
       left: 0 !important;
 
       transform: rotate(-45deg);
+    }
+
+    .vision-container {
+      max-width: 450px;
+      padding: 60px 0;
     }
   }
 </style>
