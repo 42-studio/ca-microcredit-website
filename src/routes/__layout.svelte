@@ -194,6 +194,10 @@
       height: 85px;
     }
 
+    .links > * {
+      border-bottom: 2px solid var(--secondary);
+    }
+
     .logo-footer {
       height: 100px;
     }

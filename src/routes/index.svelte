@@ -395,7 +395,7 @@
       position: absolute;
       bottom: -10vh;
       left: 0;
-      width: 56vh;
+      width: min(56vh, 60vw);
       z-index: -1;
     }
 
