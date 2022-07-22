@@ -13,8 +13,10 @@ const config = {
       assets: "docs",
       fallback: "index.html",
     }),
-    appDir: "internal",
-    trailingSlash: "always",
+
+    prerender: {
+      default: true,
+    },
   },
 };
 
