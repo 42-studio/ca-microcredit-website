@@ -10,7 +10,7 @@
       Sorry but <code>{$page.url.pathname}</code> does not exist, do you want to
       go back home?
     </p>
-    <a href="/"><button>Take me back</button></a>
+    <a href="/" sveltekit:noscroll><button>Take me back</button></a>
   </div>
 </div>
 
