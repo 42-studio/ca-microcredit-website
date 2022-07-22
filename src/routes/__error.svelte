@@ -1,8 +1,17 @@
+<script>
+  import { page } from "$app/stores";
+</script>
+
 <div class="container">
   <div class="code">404</div>
-  <h1>Oh No! I Can't Find That Page</h1>
-  <h2>Go back home?</h2>
-  <button>Take me back</button>
+  <div class="text">
+    <h1>Oh No! I Can't Find That Page</h1>
+    <p>
+      Sorry but <code>{$page.url.pathname}</code> does not exist, do you want to
+      go back home?
+    </p>
+    <a href="/"><button>Take me back</button></a>
+  </div>
 </div>
 
 <style>
@@ -10,6 +19,7 @@
     height: 40px;
     width: 220px;
     margin: 0;
+    margin-top: 28px;
     border-radius: 10px;
     border: none;
     background-color: var(--primary);
@@ -38,9 +48,18 @@
   }
 
   .code {
-    font-size: 100px;
+    font-size: 25vh;
     color: transparent;
-    -webkit-text-stroke: 3px var(--secondary);
+    -webkit-text-stroke: 0.5vh var(--secondary);
+    align-self: flex-start;
+  }
+
+  p {
+    opacity: 0.5;
+  }
+
+  code {
+    font-size: 1rem;
   }
 
   @media screen and (min-width: 800px) {

@@ -1,0 +1,1 @@
+import{S as o,i as a,s as n,T as r,d as c,n as t}from"../chunks/index-10e7a73c.js";function d(s){return{c(){this.h()},l(e){r('[data-svelte="svelte-1tj70ox"]',document.head).forEach(c),this.h()},h(){document.title="Contact \u2022 C.A. Micro Credit Enterprise"},m:t,p:t,i:t,o:t,d:t}}class h extends o{constructor(e){super(),a(this,e,null,d,n,{})}}export{h as default};
