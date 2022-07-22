@@ -14,9 +14,7 @@ const config = {
       fallback: "index.html",
     }),
     appDir: "internal",
-    prerender: {
-      entries: [],
-    },
+    trailingSlash: "always",
   },
 };
 
