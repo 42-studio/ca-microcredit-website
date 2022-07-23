@@ -11,6 +11,7 @@
       duration: pageTransitionDuration,
       delay: pageTransitionDuration,
     }}
+    on:outroend={() => window.scrollTo(0, 0)}
     out:fly={{ opacity: 0, duration: pageTransitionDuration }}
   >
     <slot />
