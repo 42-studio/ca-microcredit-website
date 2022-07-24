@@ -1,3 +1,7 @@
+<script>
+  import Saos from "saos";
+</script>
+
 <svelte:head>
   <title>Contact • C.A. Micro Credit Enterprise</title>
 </svelte:head>
@@ -7,48 +11,59 @@
 </div>
 
 <div class="form-container">
-  <!-- https://formspree.io/ -->
-  <form>
-    <div class="form">
-      <h1>Write Us</h1>
-      <input type="text" id="name" name="name" placeholder="Name" />
-      <input type="email" id="email" name="email" placeholder="Email" />
-      <input type="text" id="subject" name="subject" placeholder="Subject" />
-      <textarea type="text" id="message" name="message" placeholder="Message" />
-      <button type="submit">Send</button>
-    </div>
-    <div class="information">
-      <h1>Contact information</h1>
-      <p>Get in contact with us, we would love to talk</p>
-      <div class="contact-info-widget">
-        <div class="icon">
-          <img src="/images/location-dot-solid.svg" alt="" />
-        </div>
-        <div class="widget-title">Address: <span>**address**</span></div>
+  <Saos animation={"from-right 2s ease"}>
+    <!-- https://formspree.io/ -->
+    <form>
+      <div class="form">
+        <h1>Write Us</h1>
+        <input type="text" id="name" name="name" placeholder="Name" />
+        <input type="email" id="email" name="email" placeholder="Email" />
+        <input type="text" id="subject" name="subject" placeholder="Subject" />
+        <textarea
+          type="text"
+          id="message"
+          name="message"
+          placeholder="Message"
+        />
+        <button type="submit">Send</button>
       </div>
-      <div class="contact-info-widget">
-        <div class="icon">
-          <img src="/images/phone-solid.svg" alt="" />
+      <div class="information">
+        <h1>Contact information</h1>
+        <p>Get in contact with us, we would love to talk</p>
+        <div class="contact-info-widget">
+          <div class="icon">
+            <img src="/images/location-dot-solid.svg" alt="" />
+          </div>
+          <div class="widget-title">Address: <span>**address**</span></div>
         </div>
-        <div class="widget-title">Phone: <span>**phone**</span></div>
-      </div>
-      <div class="contact-info-widget">
-        <div class="icon">
-          <img src="/images/at-solid.svg" alt="" />
+        <div class="contact-info-widget">
+          <div class="icon">
+            <img src="/images/phone-solid.svg" alt="" />
+          </div>
+          <div class="widget-title">Phone: <span>**phone**</span></div>
         </div>
-        <div class="widget-title">Email: <span>**email**</span></div>
-      </div>
-      <div class="contact-info-widget">
-        <div class="icon">
-          <img src="/images/earth-africa-solid.svg" alt="" />
+        <div class="contact-info-widget">
+          <div class="icon">
+            <img src="/images/at-solid.svg" alt="" />
+          </div>
+          <div class="widget-title">Email: <span>**email**</span></div>
         </div>
-        <div class="widget-title">Website: <span>**website**</span></div>
+        <div class="contact-info-widget">
+          <div class="icon">
+            <img src="/images/earth-africa-solid.svg" alt="" />
+          </div>
+          <div class="widget-title">Website: <span>**website**</span></div>
+        </div>
       </div>
-    </div>
-  </form>
+    </form>
+  </Saos>
 </div>
 
 <style>
+  .title-wrapper {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
   .title {
     display: block;
     font-family: "Roboto Slab", serif;

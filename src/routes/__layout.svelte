@@ -3,12 +3,11 @@
   export const load = async ({ url }) => ({ props: { url } });
 </script>
 
-<script>
+<script lang="ts">
   import { page } from "$app/stores";
   import PageTransition from "../lib/components/PageTransition.svelte";
 
-  /** @type string */
-  export let url;
+  export let url: string;
   let y = 0;
 </script>
 
@@ -207,5 +206,61 @@
 
   section.bottom {
     font-size: 14px;
+  }
+
+  @keyframes -global-fade-in {
+    0% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes -global-from-left {
+    0% {
+      transform: translateX(-50px) scale(0.95);
+      opacity: 0;
+    }
+    30% {
+      transform: translateX(-50px) scale(0.95);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes -global-from-right {
+    0% {
+      transform: translateX(50px) scale(0.95);
+      opacity: 0;
+    }
+    30% {
+      transform: translateX(50px) scale(0.95);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes -global-from-bottom {
+    0% {
+      transform: translateY(30px) scale(0.95);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(30px) scale(0.95);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+      opacity: 1;
+    }
   }
 </style>

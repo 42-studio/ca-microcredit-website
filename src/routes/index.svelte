@@ -1,4 +1,6 @@
 <script>
+  import Saos from "saos";
+
   const values = {
     "Every individual has potential": "child-reaching",
     "We treat all with respect": "people-group",
@@ -13,35 +15,52 @@
 </svelte:head>
 
 <section class="title">
-  <h1>C.A. Micro Credit</h1>
-  <h2>supporting local<br />communities</h2>
+  <Saos once={true} animation={"2s from-right ease"}>
+    <h1>C.A. Micro Credit</h1>
+    <h2>supporting local<br />communities</h2>
+    <h2>in Ghana</h2>
+  </Saos>
   <img src="/images/leaves.svg" alt="leaves" class="leaves" />
-  <h2>in Ghana</h2>
 
   <div class="learn-more-container">
-    <img src="/images/man.png" alt="man" class="man" />
-    <button
-      class="learn-more-btn"
-      on:click|preventDefault={(e) =>
-        document
-          .querySelectorAll(".learn-more-btn")[0]
-          .scrollIntoView({ behavior: "smooth" })}>Learn more</button
-    >
+    <div class="man-wrapper">
+      <Saos once={true} animation={"2.4s fade-in ease"}>
+        <img src="/images/man.png" alt="man" class="man" />
+      </Saos>
+    </div>
+    <div class="learn-more-btn">
+      <Saos once={true} animation={"2.2s from-bottom ease"}>
+        <button
+          on:click|preventDefault={(e) =>
+            document
+              .querySelectorAll(".learn-more-btn")[0]
+              .scrollIntoView({ behavior: "smooth" })}>Learn more</button
+        >
+      </Saos>
+    </div>
   </div>
 </section>
 <section class="mission">
   <div class="mission-container">
-    <h1 class="mission-title">Our Mission</h1>
-    <hr class="mission-hr" />
-    <p class="mission-statement">
-      "To create financial inclusion by providing efficient delivery of credit
-      facilities to micro, small and medium enterprises through a combination of
-      servicing methodologies with an ultimate objective of no bankable poor are
-      left behind”
-    </p>
-    <a class="desktop-explore-btn" sveltekit:noscroll href="/stories">
-      <button class="explore-btn">Explore our stories</button>
-    </a>
+    <Saos once={true} animation={"from-bottom 1s ease"} top={200}>
+      <div class="mission-title-container">
+        <h1 class="mission-title">Our Mission</h1>
+        <hr class="mission-hr" />
+      </div>
+    </Saos>
+    <Saos once={true} animation={"fade-in 1s ease"} top={200}>
+      <p class="mission-statement">
+        "To create financial inclusion by providing efficient delivery of credit
+        facilities to micro, small and medium enterprises through a combination
+        of servicing methodologies with an ultimate objective of no bankable
+        poor are left behind”
+      </p>
+    </Saos>
+    <Saos once={true} animation={"from-bottom 2s ease"} top={200}>
+      <a class="desktop-explore-btn" sveltekit:noscroll href="/stories">
+        <button class="explore-btn">Explore our stories</button>
+      </a>
+    </Saos>
   </div>
   <div class="img-container">
     <img src="/images/people.jpg" alt="people" class="people" />
@@ -51,56 +70,74 @@
   </div>
 </section>
 <section class="values">
-  <h1 class="values-title">Our Core Values</h1>
-  <hr class="values-hr" />
+  <Saos once={true} animation={"from-bottom 1s ease"} top={200}>
+    <div class="values-title-container">
+      <h1 class="values-title">Our Core Values</h1>
+      <hr class="values-hr" />
+    </div>
+  </Saos>
   <div class="values-container">
     {#each Object.entries(values) as [value, image], i}
       {#if i % 2}
-        <div class="value-container">
-          <div class="value-spacer" />
-          <div class="value-text">{value}</div>
-          <div class="left-arrow">
-            <img
-              class="value-icon"
-              src="/images/{image}-solid.svg"
-              alt={image}
-            />
+        <Saos once={true} animation={"from-right 2s ease"} top={200}>
+          <div class="value-container">
+            <div class="value-spacer" />
+            <div class="value-text">{value}</div>
+            <div class="left-arrow">
+              <img
+                class="value-icon"
+                src="/images/{image}-solid.svg"
+                alt={image}
+              />
+            </div>
           </div>
-        </div>
+        </Saos>
       {:else}
-        <div class="value-container">
-          <div class="right-arrow">
-            <img
-              class="value-icon"
-              src="/images/{image}-solid.svg"
-              alt={image}
-            />
+        <Saos once={true} animation={"from-left 2s ease"} top={200}>
+          <div class="value-container">
+            <div class="right-arrow">
+              <img
+                class="value-icon"
+                src="/images/{image}-solid.svg"
+                alt={image}
+              />
+            </div>
+            <div class="value-text">{value}</div>
+            <div class="value-spacer" />
           </div>
-          <div class="value-text">{value}</div>
-          <div class="value-spacer" />
-        </div>
+        </Saos>
       {/if}
     {/each}
   </div>
 </section>
 <section class="vision">
-  <h1 class="vision-title">Our Vision</h1>
-  <hr />
+  <Saos once={true} animation={"from-bottom 1s ease"} top={200}>
+    <div class="vision-title-container">
+      <h1 class="vision-title">Our Vision</h1>
+      <hr />
+    </div>
+  </Saos>
   <div class="vision-container">
-    <p class="vision-text">
-      The vision of C.A. Micro Credit Enterprise is to grow into a first class
-      universal bank
-    </p>
-    <p class="vision-text">
-      Interested in investing with <span style="font-weight: 600;"
-        >C.A. Micro Credit Enterprise</span
-      >? Get in touch with us below
-    </p>
+    <Saos once={true} animation={"fade-in 1.5s ease"} top={200}>
+      <p class="vision-text">
+        The vision of C.A. Micro Credit Enterprise is to grow into a first class
+        universal bank
+      </p>
+    </Saos>
+    <Saos once={true} animation={"fade-in 1.5s ease"} top={200}>
+      <p class="vision-text">
+        Interested in investing with <span style="font-weight: 600;"
+          >C.A. Micro Credit Enterprise</span
+        >? Get in touch with us below
+      </p>
+    </Saos>
   </div>
   <br />
-  <a sveltekit:noscroll href="/contact">
-    <button class="vision-button">Contact us</button>
-  </a>
+  <Saos once={true} animation={"from-bottom 3s ease"} top={200}>
+    <a sveltekit:noscroll href="/contact">
+      <button class="vision-button">Contact us</button>
+    </a>
+  </Saos>
 </section>
 
 <style>
@@ -141,6 +178,11 @@
     align-items: center;
     margin-top: calc(100vh - 730px);
   }
+
+  .man-wrapper {
+    z-index: -1;
+  }
+
   .man {
     transform: translateY(5px);
     z-index: 0;
@@ -188,7 +230,14 @@
     align-items: center;
   }
 
+  .mission-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .mission-title {
+    text-align: center;
     margin-top: 20px;
     margin-bottom: 30px;
     line-height: 1em;
@@ -248,6 +297,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+  }
+
+  .values-title-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
@@ -326,6 +381,12 @@
     background: #321325;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
     border-radius: 20px 20px 0px 0px;
+  }
+
+  .vision-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .vision-title {
@@ -413,6 +474,9 @@
       padding: 60px;
       align-items: flex-start;
     }
+    .mission-title-container {
+      align-items: flex-start;
+    }
 
     hr {
       height: 3px;
@@ -485,6 +549,10 @@
       border: none;
     }
 
+    .values-container {
+      padding: 60px;
+    }
+
     .value-icon {
       height: 60px;
       width: 60px;
@@ -495,7 +563,7 @@
 
     .vision-container {
       max-width: 450px;
-      padding: 60px 0;
+      padding: 40px 0;
     }
   }
 </style>
