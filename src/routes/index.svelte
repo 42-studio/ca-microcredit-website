@@ -123,8 +123,6 @@
         The vision of C.A. Micro Credit Enterprise is to grow into a first class
         universal bank
       </p>
-    </Saos>
-    <Saos once={true} animation={"fade-in 1.5s ease"} top={200}>
       <p class="vision-text">
         Interested in investing with <span style="font-weight: 600;"
           >C.A. Micro Credit Enterprise</span
