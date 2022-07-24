@@ -1,10 +1,10 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "immutable/start-a01f8c10.js",
+    "file": "immutable/start-4b6df7c3.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-c39ccb3b.js"
+      "_index-188bc1c2.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
@@ -17,96 +17,104 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "immutable/pages/__layout.svelte-dc23171a.js",
+    "file": "immutable/pages/__layout.svelte-e8e7e856.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-c39ccb3b.js",
-      "_stores-317cc90a.js"
+      "_index-188bc1c2.js",
+      "_stores-a237c579.js"
     ],
     "css": [
-      "immutable/assets/pages/__layout.svelte-7ae91c3e.css"
+      "immutable/assets/pages/__layout.svelte-b828c0bc.css"
     ]
   },
   "src/routes/__error.svelte": {
-    "file": "immutable/pages/__error.svelte-1af28009.js",
+    "file": "immutable/pages/__error.svelte-0d95b282.js",
     "src": "src/routes/__error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-c39ccb3b.js",
-      "_stores-317cc90a.js"
+      "_index-188bc1c2.js",
+      "_stores-a237c579.js"
     ],
     "css": [
       "immutable/assets/pages/404.svelte-a085f7ba.css"
     ]
   },
   "src/routes/404.svelte": {
-    "file": "immutable/pages/404.svelte-43d16a2d.js",
+    "file": "immutable/pages/404.svelte-2aa0bcab.js",
     "src": "src/routes/404.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-c39ccb3b.js",
-      "_stores-317cc90a.js"
+      "_index-188bc1c2.js",
+      "_stores-a237c579.js"
     ],
     "css": [
       "immutable/assets/pages/404.svelte-a085f7ba.css"
     ]
   },
   "src/routes/contact.svelte": {
-    "file": "immutable/pages/contact.svelte-e9a40344.js",
+    "file": "immutable/pages/contact.svelte-c98e7334.js",
     "src": "src/routes/contact.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-c39ccb3b.js"
+      "_index-188bc1c2.js",
+      "_Saos-bc38f05e.js"
     ],
     "css": [
-      "immutable/assets/pages/contact.svelte-7e5d93ad.css"
+      "immutable/assets/pages/contact.svelte-4dff52d6.css"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "immutable/pages/index.svelte-538a8ad6.js",
+    "file": "immutable/pages/index.svelte-6064468e.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-c39ccb3b.js"
+      "_index-188bc1c2.js",
+      "_Saos-bc38f05e.js"
     ],
     "css": [
-      "immutable/assets/pages/index.svelte-39edd396.css"
+      "immutable/assets/pages/index.svelte-6ae3c446.css"
     ]
   },
   "src/routes/privacy.svelte": {
-    "file": "immutable/pages/privacy.svelte-91fb3796.js",
+    "file": "immutable/pages/privacy.svelte-106b7d3e.js",
     "src": "src/routes/privacy.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-c39ccb3b.js"
+      "_index-188bc1c2.js"
     ],
     "css": [
       "immutable/assets/pages/privacy.svelte-25812256.css"
     ]
   },
   "src/routes/stories.svelte": {
-    "file": "immutable/pages/stories.svelte-cb22975b.js",
+    "file": "immutable/pages/stories.svelte-8c0427a8.js",
     "src": "src/routes/stories.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-c39ccb3b.js"
+      "_index-188bc1c2.js"
     ]
   },
-  "_index-c39ccb3b.js": {
-    "file": "immutable/chunks/index-c39ccb3b.js"
+  "_index-188bc1c2.js": {
+    "file": "immutable/chunks/index-188bc1c2.js"
   },
-  "_stores-317cc90a.js": {
-    "file": "immutable/chunks/stores-317cc90a.js",
+  "_stores-a237c579.js": {
+    "file": "immutable/chunks/stores-a237c579.js",
     "imports": [
-      "_index-c39ccb3b.js"
+      "_index-188bc1c2.js"
+    ]
+  },
+  "_Saos-bc38f05e.js": {
+    "file": "immutable/chunks/Saos-bc38f05e.js",
+    "imports": [
+      "_index-188bc1c2.js"
     ]
   }
 }
