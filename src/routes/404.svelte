@@ -2,11 +2,15 @@
   import { page } from "$app/stores";
 </script>
 
+<svelte:head>
+  <title>404 • C.A. Micro Credit Enterprise</title>
+</svelte:head>
+
 <div class="container">
   <div class="code">404</div>
-  <div class="text">
+  <div>
     <h1>Oh No! I Can't Find That Page</h1>
-    <p>
+    <p class="text">
       Sorry but <code>{$page.url.pathname}</code> does not exist, do you want to
       go back home?
     </p>
@@ -54,7 +58,7 @@
     align-self: flex-start;
   }
 
-  p {
+  .text {
     opacity: 0.5;
   }
 
