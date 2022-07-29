@@ -6,10 +6,6 @@
   <title>Contact • C.A. Micro Credit Enterprise</title>
 </svelte:head>
 
-<div class="title-wrapper">
-  <h1 class="title">Get in Contact</h1>
-</div>
-
 <div class="form-container">
   <Saos animation={"from-right 2s ease"}>
     <!-- https://formspree.io/ -->
@@ -34,25 +30,39 @@
           <div class="icon">
             <img src="/images/location-dot-solid.svg" alt="" />
           </div>
-          <div class="widget-title">Address: <span>**address**</span></div>
+          <div class="widget-title">Address:</div>
+          <div class="widget-text">
+            C.A Micro Credit Enterprise<br />Post Office Box 3<br />Upper East
+            Region, Garu<br />West Africa, Ghana
+          </div>
         </div>
         <div class="contact-info-widget">
           <div class="icon">
             <img src="/images/phone-solid.svg" alt="" />
           </div>
-          <div class="widget-title">Phone: <span>**phone**</span></div>
+          <div class="widget-title">Phone:</div>
+          <div class="widget-text">
+            <a href="tel:+233-24-541-4899">+233 (0)24 541 4899</a> /
+            <a href="tel:+233-24-239-1057">+233 (0)24 239 1057</a>
+          </div>
         </div>
         <div class="contact-info-widget">
           <div class="icon">
             <img src="/images/at-solid.svg" alt="" />
           </div>
-          <div class="widget-title">Email: <span>**email**</span></div>
+          <div class="widget-title">Email:</div>
+          <div class="widget-text">
+            <a href="mailto:charlesasaa@gmail.com">charlesasaa@gmail.com</a>
+          </div>
         </div>
         <div class="contact-info-widget">
           <div class="icon">
             <img src="/images/earth-africa-solid.svg" alt="" />
           </div>
-          <div class="widget-title">Website: <span>**website**</span></div>
+          <div class="widget-title">Website:</div>
+          <div class="widget-text">
+            <a href="https://ca-microcredit.com">ca-microcredit.com</a>
+          </div>
         </div>
       </div>
     </form>
@@ -60,28 +70,16 @@
 </div>
 
 <style>
-  .title-wrapper {
-    max-width: 1320px;
-    margin: 0 auto;
-  }
-  .title {
-    display: block;
-    font-family: "Roboto Slab", serif;
-    font-size: 2em;
-    margin: 0 28px;
-    line-height: 1.6em;
-    font-weight: 700;
-  }
   form {
     color: var(--white);
     display: flex;
     flex-direction: column;
     max-width: 1200px;
     padding: 28px;
+    padding-top: 0;
   }
 
-  p,
-  span {
+  p {
     opacity: 0.5;
     margin: 0;
   }
@@ -92,7 +90,7 @@
 
   .form {
     padding: 28px;
-    flex-grow: 1;
+    flex-grow: 10;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -185,18 +183,21 @@
     margin-left: 12px;
   }
 
-  @media screen and (min-width: 800px) {
-    .title {
-      font-size: 3em;
-      margin: 0 60px;
-      line-height: 1.6em;
-      font-weight: 700;
-    }
+  .widget-text {
+    opacity: 0.5;
+    margin-left: 1.5em;
+  }
 
+  a {
+    text-decoration: underline;
+    color: var(--white);
+  }
+
+  @media screen and (min-width: 800px) {
     form {
       flex-direction: row;
       padding: 60px;
-      padding-top: 28px;
+      padding-top: 0;
       margin: 0 auto;
     }
 
