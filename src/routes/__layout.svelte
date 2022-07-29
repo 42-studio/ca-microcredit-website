@@ -59,7 +59,12 @@
     <hr />
     <section class="bottom">
       <section class="left">
-        <p class="footer-paragraph">© {new Date().getFullYear()}</p>
+        <p class="footer-paragraph">
+          © {new Date().getFullYear()} •
+          <a class="footer-a" href="/privacy" sveltekit:noscroll
+            >Privacy Policy</a
+          >
+        </p>
       </section>
       <section class="right">
         <p class="footer-paragraph">
@@ -115,7 +120,7 @@
   }
 
   footer {
-    padding: 20px;
+    padding: 28px;
     font-size: 12px;
     color: var(--black);
   }
@@ -193,6 +198,9 @@
 
     .links > * {
       border-bottom: 2px solid var(--secondary);
+    }
+    footer {
+      padding: 60px;
     }
 
     .logo-footer {
