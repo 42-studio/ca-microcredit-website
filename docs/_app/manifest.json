@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "immutable/start-8506a67e.js",
+    "file": "immutable/start-9bacd538.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -39,7 +39,7 @@
       "_stores-a237c579.js"
     ],
     "css": [
-      "immutable/assets/pages/__error.svelte-f2699f3f.css"
+      "immutable/assets/pages/404.svelte-024f8ae3.css"
     ]
   },
   "src/routes/404.svelte": {
@@ -52,11 +52,11 @@
       "_stores-a237c579.js"
     ],
     "css": [
-      "immutable/assets/pages/__error.svelte-f2699f3f.css"
+      "immutable/assets/pages/404.svelte-024f8ae3.css"
     ]
   },
   "src/routes/contact.svelte": {
-    "file": "immutable/pages/contact.svelte-f45e5f2c.js",
+    "file": "immutable/pages/contact.svelte-9d6395d8.js",
     "src": "src/routes/contact.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -65,11 +65,11 @@
       "_Saos-bc38f05e.js"
     ],
     "css": [
-      "immutable/assets/pages/contact.svelte-32fd2879.css"
+      "immutable/assets/pages/contact.svelte-06e8c0e1.css"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "immutable/pages/index.svelte-545a0bd1.js",
+    "file": "immutable/pages/index.svelte-739244a3.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -94,7 +94,7 @@
     ]
   },
   "src/routes/stories.svelte": {
-    "file": "immutable/pages/stories.svelte-3383b862.js",
+    "file": "immutable/pages/stories.svelte-ba8c1a49.js",
     "src": "src/routes/stories.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -102,7 +102,7 @@
       "_index-188bc1c2.js"
     ],
     "css": [
-      "immutable/assets/pages/stories.svelte-73caf4d1.css"
+      "immutable/assets/pages/stories.svelte-8b5d78dd.css"
     ]
   },
   "_index-188bc1c2.js": {
