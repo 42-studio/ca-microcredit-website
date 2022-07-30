@@ -32,8 +32,14 @@
           </div>
           <div class="widget-title">Address:</div>
           <div class="widget-text">
-            C.A Micro Credit Enterprise<br />Post Office Box 3<br />Upper East
-            Region, Garu<br />West Africa, Ghana
+            <a
+              href="https://www.google.com/maps/place/Garu,+Ghana/@9.0517837,-5.9857138,3263545m"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              C.A Micro Credit Enterprise<br />Post Office Box 3<br />Upper East
+              Region, Garu<br />West Africa, Ghana
+            </a>
           </div>
         </div>
         <div class="contact-info-widget">
@@ -185,6 +191,7 @@
 
   .widget-text {
     opacity: 0.5;
+    line-height: 1.6em;
     margin-left: 1.5em;
   }
 
