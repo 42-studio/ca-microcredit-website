@@ -56,7 +56,7 @@
         poor are left behind”
       </p>
     </Saos>
-    <Saos once={true} animation={"from-bottom 2s ease"} top={200}>
+    <Saos once={true} animation={"from-bottom 1s ease"} top={100}>
       <a class="desktop-explore-btn" sveltekit:noscroll href="/stories">
         <button class="explore-btn">Explore our stories</button>
       </a>
@@ -118,7 +118,7 @@
     </div>
   </Saos>
   <div class="vision-container">
-    <Saos once={true} animation={"fade-in 1.5s ease"} top={200}>
+    <Saos once={true} animation={"fade-in 1s ease"} top={100}>
       <p class="vision-text">
         The vision of C.A. Micro Credit Enterprise is to grow into a first class
         universal bank
@@ -131,7 +131,7 @@
     </Saos>
   </div>
   <br />
-  <Saos once={true} animation={"from-bottom 3s ease"} top={200}>
+  <Saos once={true} animation={"from-bottom 1s ease"} top={100}>
     <a sveltekit:noscroll href="/contact">
       <button class="vision-button">Contact us</button>
     </a>
