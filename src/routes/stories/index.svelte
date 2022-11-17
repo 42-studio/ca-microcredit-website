@@ -31,7 +31,6 @@
             A young lady who had to close down her store
           </div>
         </div>
-        <div class="discover">↗</div>
       </div>
     </a>
   </div>
@@ -45,7 +44,6 @@
             A food vendor who became stuck due to Covid 19
           </div>
         </div>
-        <div class="discover">↗</div>
       </div>
     </a>
   </div>
@@ -162,22 +160,6 @@
 
   .text-container > .subtitle {
     max-width: calc(100% - 6rem);
-  }
-
-  .discover {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 2rem;
-    aspect-ratio: 1;
-    border-radius: 1rem 0 1rem 0;
-
-    background-color: var(--primary);
-    color: white;
-    text-align: center;
-    font-weight: 900;
-    font-size: 3rem;
-    line-height: 2rem;
   }
 
   @media screen and (min-width: 800px) {
