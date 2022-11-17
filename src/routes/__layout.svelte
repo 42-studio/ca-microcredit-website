@@ -45,7 +45,7 @@
   <footer>
     <section class="top">
       <section class="left">
-        <p class="footer-title">C.A. Mirco Credit<br />Enterprise</p>
+        <p class="footer-title">C.A. Micro Credit<br />Enterprise</p>
         <p class="footer-paragraph">Some rights reserved</p>
       </section>
       <section class="right">
