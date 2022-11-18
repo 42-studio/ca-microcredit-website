@@ -15,7 +15,7 @@
         target="_blank"
         rel="noopener noreferrer">Garu</a
       >, a small town in the Upper East Region of north Ghana. Discover how we
-      have helped these communities by reading about some of our success stoires
+      have helped these communities by reading about some of our success stories
       below
     </p>
   </div>
