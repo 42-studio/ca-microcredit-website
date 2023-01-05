@@ -1,5 +1,11 @@
 <script>
   import Saos from "saos";
+  import { onMount } from "svelte";
+
+  onMount(async () => {
+    const form = document.getElementById("contact-form");
+    form?.reset();
+  });
 </script>
 
 <svelte:head>
@@ -9,7 +15,11 @@
 <div class="form-container">
   <Saos animation={"from-right 2s ease"}>
     <!-- https://formspree.io/ -->
-    <form>
+    <form
+      id="contact-form"
+      action="https://formspree.io/f/moqbryzp"
+      method="POST"
+    >
       <div class="form">
         <h1>Write Us</h1>
         <input type="text" id="name" name="name" placeholder="Name" />
