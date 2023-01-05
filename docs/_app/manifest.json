@@ -1,10 +1,10 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "immutable/start-7e9bd915.js",
+    "file": "immutable/start-da7c3f6b.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-e94fb5b8.js"
+      "_index-8ccbaca9.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
@@ -12,138 +12,148 @@
       "src/routes/404.svelte",
       "src/routes/contact.svelte",
       "src/routes/index.svelte",
+      "src/routes/invest.svelte",
       "src/routes/privacy.svelte",
-      "src/routes/stories/index.svelte",
+      "src/routes/stories.svelte",
       "src/routes/stories/mary-ndeogo.svelte",
       "src/routes/stories/seidu-ramatu.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "immutable/pages/__layout.svelte-4a7e248a.js",
+    "file": "immutable/pages/__layout.svelte-dd28cb7b.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-e94fb5b8.js",
-      "_stores-4a72165d.js"
+      "_index-8ccbaca9.js",
+      "_stores-5c1253b9.js"
     ],
     "css": [
-      "immutable/assets/pages/__layout.svelte-d0c00580.css"
+      "immutable/assets/pages/__layout.svelte-9e70898b.css"
     ]
   },
   "src/routes/__error.svelte": {
-    "file": "immutable/pages/__error.svelte-48b99ca0.js",
+    "file": "immutable/pages/__error.svelte-d5214047.js",
     "src": "src/routes/__error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-e94fb5b8.js",
-      "_stores-4a72165d.js"
+      "_index-8ccbaca9.js",
+      "_stores-5c1253b9.js"
     ],
     "css": [
       "immutable/assets/pages/404.svelte-024f8ae3.css"
     ]
   },
   "src/routes/404.svelte": {
-    "file": "immutable/pages/404.svelte-6d49215d.js",
+    "file": "immutable/pages/404.svelte-dcb0d80b.js",
     "src": "src/routes/404.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-e94fb5b8.js",
-      "_stores-4a72165d.js"
+      "_index-8ccbaca9.js",
+      "_stores-5c1253b9.js"
     ],
     "css": [
       "immutable/assets/pages/404.svelte-024f8ae3.css"
     ]
   },
   "src/routes/contact.svelte": {
-    "file": "immutable/pages/contact.svelte-2d4fe675.js",
+    "file": "immutable/pages/contact.svelte-e192c22f.js",
     "src": "src/routes/contact.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-e94fb5b8.js",
-      "_Saos-d0548525.js"
+      "_index-8ccbaca9.js",
+      "_Saos-30d25fb7.js"
     ],
     "css": [
       "immutable/assets/pages/contact.svelte-06e8c0e1.css"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "immutable/pages/index.svelte-8363ed05.js",
+    "file": "immutable/pages/index.svelte-88c9b0a6.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-e94fb5b8.js",
-      "_Saos-d0548525.js"
+      "_index-8ccbaca9.js",
+      "_Saos-30d25fb7.js"
     ],
     "css": [
-      "immutable/assets/pages/index.svelte-6ae3c446.css"
+      "immutable/assets/pages/index.svelte-4e4f72ba.css"
+    ]
+  },
+  "src/routes/invest.svelte": {
+    "file": "immutable/pages/invest.svelte-82ff2f50.js",
+    "src": "src/routes/invest.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-8ccbaca9.js"
     ]
   },
   "src/routes/privacy.svelte": {
-    "file": "immutable/pages/privacy.svelte-3cc6ba57.js",
+    "file": "immutable/pages/privacy.svelte-3c982cdd.js",
     "src": "src/routes/privacy.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-e94fb5b8.js"
+      "_index-8ccbaca9.js"
     ],
     "css": [
       "immutable/assets/pages/privacy.svelte-25812256.css"
     ]
   },
-  "src/routes/stories/index.svelte": {
-    "file": "immutable/pages/stories/index.svelte-49ae8f5a.js",
-    "src": "src/routes/stories/index.svelte",
+  "src/routes/stories.svelte": {
+    "file": "immutable/pages/stories.svelte-ce521e35.js",
+    "src": "src/routes/stories.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-e94fb5b8.js"
+      "_index-8ccbaca9.js"
     ],
     "css": [
-      "immutable/assets/pages/stories/index.svelte-7d26502c.css"
+      "immutable/assets/pages/stories.svelte-8b5d78dd.css"
     ]
   },
   "src/routes/stories/mary-ndeogo.svelte": {
-    "file": "immutable/pages/stories/mary-ndeogo.svelte-8acc3ba6.js",
+    "file": "immutable/pages/stories/mary-ndeogo.svelte-a31d8ed7.js",
     "src": "src/routes/stories/mary-ndeogo.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-e94fb5b8.js"
+      "_index-8ccbaca9.js"
     ],
     "css": [
-      "immutable/assets/pages/stories/seidu-ramatu.svelte-0f3d70d6.css"
+      "immutable/assets/pages/stories/mary-ndeogo.svelte-582a29ff.css"
     ]
   },
   "src/routes/stories/seidu-ramatu.svelte": {
-    "file": "immutable/pages/stories/seidu-ramatu.svelte-7dc2a830.js",
+    "file": "immutable/pages/stories/seidu-ramatu.svelte-d96a9f95.js",
     "src": "src/routes/stories/seidu-ramatu.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-e94fb5b8.js"
+      "_index-8ccbaca9.js"
     ],
     "css": [
-      "immutable/assets/pages/stories/seidu-ramatu.svelte-0f3d70d6.css"
+      "immutable/assets/pages/stories/mary-ndeogo.svelte-582a29ff.css"
     ]
   },
-  "_index-e94fb5b8.js": {
-    "file": "immutable/chunks/index-e94fb5b8.js"
+  "_index-8ccbaca9.js": {
+    "file": "immutable/chunks/index-8ccbaca9.js"
   },
-  "_stores-4a72165d.js": {
-    "file": "immutable/chunks/stores-4a72165d.js",
+  "_stores-5c1253b9.js": {
+    "file": "immutable/chunks/stores-5c1253b9.js",
     "imports": [
-      "_index-e94fb5b8.js"
+      "_index-8ccbaca9.js"
     ]
   },
-  "_Saos-d0548525.js": {
-    "file": "immutable/chunks/Saos-d0548525.js",
+  "_Saos-30d25fb7.js": {
+    "file": "immutable/chunks/Saos-30d25fb7.js",
     "imports": [
-      "_index-e94fb5b8.js"
+      "_index-8ccbaca9.js"
     ]
   }
 }
