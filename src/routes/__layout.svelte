@@ -4,7 +4,7 @@
 </script>
 
 <script lang="ts">
-  import { page } from "$app/stores";
+  import NavMenu from "$lib/components/NavMenu.svelte";
   import PageTransition from "../lib/components/PageTransition.svelte";
 
   export let url: string;
@@ -21,23 +21,7 @@
       class="logo-nav"
     />
   </a>
-  <div class="links">
-    <a
-      href="/"
-      sveltekit:noscroll
-      style="opacity: {$page.url.pathname == '/' ? 1 : 0.5}">Home</a
-    >
-    <a
-      href="/stories"
-      sveltekit:noscroll
-      style="opacity: {$page.url.pathname == '/stories' ? 1 : 0.5}">Stories</a
-    >
-    <a
-      href="/contact"
-      sveltekit:noscroll
-      style="opacity: {$page.url.pathname == '/contact' ? 1 : 0.5}">Contact</a
-    >
-  </div>
+  <NavMenu />
 </nav>
 
 <PageTransition {url}>
@@ -98,25 +82,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .links {
-    display: block;
-    text-align: right;
-    line-height: 2rem;
-  }
-  .links > * {
-    margin-left: 20px;
-    text-decoration: none;
-    color: var(--black);
-    border-bottom: 1px solid var(--secondary);
-    padding-bottom: 1px;
-
-    transition: all 200ms ease;
-  }
-
-  .links > *:hover {
-    padding-bottom: 4px;
   }
 
   footer {
@@ -196,9 +161,6 @@
       height: 85px;
     }
 
-    .links > * {
-      border-bottom: 2px solid var(--secondary);
-    }
     footer {
       padding: 60px;
     }

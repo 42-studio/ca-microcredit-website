@@ -52,8 +52,9 @@
       <p class="mission-statement">
         "To create financial inclusion by providing efficient delivery of credit
         facilities to micro, small and medium enterprises through a combination
-        of servicing methodologies with an ultimate objective of no bankable
-        poor are left behind”
+        of servicing methodologies with an ultimate objective of <bold
+          >no bankable poor are left behind</bold
+        >”
       </p>
     </Saos>
     <Saos once={true} animation={"from-bottom 1s ease"} top={100}>
@@ -161,6 +162,10 @@
   }
   h2 {
     font-weight: 400;
+  }
+
+  bold {
+    font-weight: 700;
   }
 
   .leaves {
