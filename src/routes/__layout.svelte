@@ -54,9 +54,9 @@
         <p class="footer-paragraph">
           website by <a
             class="footer-a"
-            href="https://joshlucpoll.dev"
+            href="https://42.studio"
             target="_blank"
-            rel="noopener noreferrer">joshlucpoll</a
+            rel="noopener noreferrer">Studio 42</a
           >
         </p>
       </section>
