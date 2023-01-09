@@ -53,17 +53,19 @@
   .header-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   .title-wrapper {
     margin: 0 28px;
-    text-align: right;
+    text-align: center;
     display: flex;
     flex-direction: column;
   }
 
   .subtitle {
-    align-self: flex-end;
+    align-self: center;
+    text-align: center;
     max-width: 410px;
     opacity: 0.5;
     line-height: 1.7em;
@@ -79,7 +81,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 8rem;
-    /* justify-items: center; */
     font-size: 14px;
   }
 
@@ -181,6 +182,7 @@
     .stories {
       padding: 0 60px;
       font-size: 16px;
+      justify-items: center;
     }
   }
 </style>

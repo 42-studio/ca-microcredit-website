@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { fly, scale } from "svelte/transition";
-  import { page } from "$app/stores";
+  import { fly } from "svelte/transition";
+  import { page, navigating } from "$app/stores";
 
   let open: boolean = false;
   const links: Array<string> = ["Home", "Invest", "Stories", "Contact"];
@@ -17,14 +17,16 @@
     version="1.1"
     viewBox="0 0 32 32"
     width="32px"
+    fill={open ? "white" : "black"}
     ><path
       d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
-    /></svg
-  >
+    />
+  </svg>
 {/if}
 {#if open || innerWidth > 600}
   <div
     class="links"
+    on:click={() => (open = false)}
     transition:fly={{ opacity: 0, duration: innerWidth > 600 ? 0 : 300 }}
   >
     {#each links as link, i}
@@ -36,6 +38,7 @@
         }}
         href={link == "Home" ? "/" : `/${link.toLowerCase()}`}
         sveltekit:noscroll
+        on:click={() => (open = false)}
         style="opacity: {($page.url.pathname == '/'
           ? '/home'
           : $page.url.pathname) ==
@@ -63,15 +66,18 @@
     display: block;
     text-align: right;
     line-height: 2rem;
-    pointer-events: none;
+    /* pointer-events: none; */
   }
   .links > * {
     pointer-events: all;
-    margin-left: 20px;
+    margin-left: 1.5rem;
     text-decoration: none;
     color: var(--black);
     border-bottom: 1px solid var(--secondary);
     padding-bottom: 1px;
+
+    -webkit-user-select: none;
+    user-select: none;
 
     transition: all 200ms ease;
   }
@@ -82,6 +88,7 @@
 
   @media screen and (max-width: 600px) {
     .links {
+      background: rgba(0, 0, 0, 0.5);
       position: absolute;
       top: 0;
       left: 0;
@@ -98,6 +105,15 @@
 
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
+    }
+
+    .links > * {
+      border-bottom: 0;
+      padding-bottom: 1rem !important;
+
+      font-size: 1.5rem;
+      color: white;
+      /* font-weight: bold; */
     }
   }
 

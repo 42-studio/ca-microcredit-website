@@ -42,13 +42,13 @@
 </section>
 <section class="mission">
   <div class="mission-container">
-    <Saos once={true} animation={"from-bottom 1s ease"} top={200}>
+    <Saos once={true} animation={"from-bottom 500ms ease"} top={200}>
       <div class="mission-title-container">
         <h1 class="mission-title">Our Mission</h1>
         <hr class="mission-hr" />
       </div>
     </Saos>
-    <Saos once={true} animation={"fade-in 1s ease"} top={200}>
+    <Saos once={true} animation={"fade-in 500ms ease"} top={200}>
       <p class="mission-statement">
         "To create financial inclusion by providing efficient delivery of credit
         facilities to micro, small and medium enterprises through a combination
@@ -57,7 +57,7 @@
         >”
       </p>
     </Saos>
-    <Saos once={true} animation={"from-bottom 1s ease"} top={100}>
+    <Saos once={true} animation={"from-bottom 500ms ease"} top={100}>
       <a class="desktop-explore-btn" sveltekit:noscroll href="/stories">
         <button class="explore-btn">Explore our stories</button>
       </a>
@@ -71,7 +71,7 @@
   </div>
 </section>
 <section class="values">
-  <Saos once={true} animation={"from-bottom 1s ease"} top={200}>
+  <Saos once={true} animation={"from-bottom 500ms ease"} top={200}>
     <div class="values-title-container">
       <h1 class="values-title">Our Core Values</h1>
       <hr class="values-hr" />
@@ -80,7 +80,7 @@
   <div class="values-container">
     {#each Object.entries(values) as [value, image], i}
       {#if i % 2}
-        <Saos once={true} animation={"from-right 2s ease"} top={200}>
+        <Saos once={true} animation={"from-right 500ms ease"} top={200}>
           <div class="value-container">
             <div class="value-spacer" />
             <div class="value-text">{value}</div>
@@ -94,7 +94,7 @@
           </div>
         </Saos>
       {:else}
-        <Saos once={true} animation={"from-left 2s ease"} top={200}>
+        <Saos once={true} animation={"from-left 500ms ease"} top={200}>
           <div class="value-container">
             <div class="right-arrow">
               <img
@@ -112,14 +112,14 @@
   </div>
 </section>
 <section class="vision">
-  <Saos once={true} animation={"from-bottom 1s ease"} top={200}>
+  <Saos once={true} animation={"from-bottom 500ms ease"} top={200}>
     <div class="vision-title-container">
       <h1 class="vision-title">Our Vision</h1>
       <hr />
     </div>
   </Saos>
   <div class="vision-container">
-    <Saos once={true} animation={"fade-in 1s ease"} top={100}>
+    <Saos once={true} animation={"fade-in 500ms ease"} top={100}>
       <p class="vision-text">
         The vision of C.A. Micro Credit Enterprise is to grow into a first class
         universal bank
@@ -132,7 +132,7 @@
     </Saos>
   </div>
   <br />
-  <Saos once={true} animation={"from-bottom 1s ease"} top={100}>
+  <Saos once={true} animation={"from-bottom 500ms ease"} top={100}>
     <a sveltekit:noscroll href="/contact">
       <button class="vision-button">Contact us</button>
     </a>
