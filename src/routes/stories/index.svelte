@@ -47,6 +47,34 @@
       </div>
     </a>
   </div>
+  <div class="story">
+    <a href="/stories/karim-zenabu" sveltekit:noscroll>
+      <div class="image">
+        <img src="/images/stories/KARIM_ZENABU.jpg" alt="Karim Zenabu" />
+        <div class="text-container">
+          <div class="story-title">Karim Zenabu</div>
+          <div class="subtitle">
+            Karim Zenabu empowers women entrepreneurs in Ghana through her
+            successful soya bean cake business.
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="story">
+    <a href="/stories/ramatu-mahama" sveltekit:noscroll>
+      <div class="image">
+        <img src="/images/stories/MAHAMA_RAMATU.jpg" alt="Ramatu Mahama" />
+        <div class="text-container">
+          <div class="story-title">Mahama Ramatu</div>
+          <div class="subtitle">
+            Microcredit transformed Mahama Ramatu's life and her children's
+            future.
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
 </div>
 
 <style>
@@ -65,9 +93,10 @@
 
   .subtitle {
     align-self: center;
-    text-align: center;
+    margin-top: 0.2rem;
+    text-align: left;
     max-width: 410px;
-    opacity: 0.5;
+    opacity: 0.6;
     line-height: 1.7em;
   }
 
