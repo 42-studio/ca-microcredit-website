@@ -94,7 +94,7 @@
   .subtitle {
     align-self: center;
     margin-top: 0.2rem;
-    text-align: left;
+    text-align: center;
     max-width: 410px;
     opacity: 0.6;
     line-height: 1.7em;
