@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "immutable/start-8a65df89.js",
+    "file": "immutable/start-f4a2ac1e.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -14,11 +14,8 @@
       "src/routes/index.svelte",
       "src/routes/invest.svelte",
       "src/routes/privacy.svelte",
-      "src/routes/stories/index.svelte",
-      "src/routes/stories/karim-zenabu.svelte",
-      "src/routes/stories/mary-ndeogo.svelte",
-      "src/routes/stories/ramatu-mahama.svelte",
-      "src/routes/stories/seidu-ramatu.svelte"
+      "src/routes/stories/[slug].svelte",
+      "src/routes/stories/index.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
@@ -110,64 +107,30 @@
       "immutable/assets/pages/privacy.svelte-25812256.css"
     ]
   },
+  "src/routes/stories/[slug].svelte": {
+    "file": "immutable/pages/stories/_slug_.svelte-1f4e17a2.js",
+    "src": "src/routes/stories/[slug].svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-8ccbaca9.js",
+      "_stories-8e9c98de.js"
+    ],
+    "css": [
+      "immutable/assets/pages/stories/_slug_.svelte-b821d706.css"
+    ]
+  },
   "src/routes/stories/index.svelte": {
-    "file": "immutable/pages/stories/index.svelte-b7d7ca9b.js",
+    "file": "immutable/pages/stories/index.svelte-84c036ba.js",
     "src": "src/routes/stories/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-8ccbaca9.js"
+      "_index-8ccbaca9.js",
+      "_stories-8e9c98de.js"
     ],
     "css": [
-      "immutable/assets/pages/stories/index.svelte-8b235dce.css"
-    ]
-  },
-  "src/routes/stories/karim-zenabu.svelte": {
-    "file": "immutable/pages/stories/karim-zenabu.svelte-da7ba80e.js",
-    "src": "src/routes/stories/karim-zenabu.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-8ccbaca9.js"
-    ],
-    "css": [
-      "immutable/assets/pages/stories/karim-zenabu.svelte-1efafefc.css"
-    ]
-  },
-  "src/routes/stories/mary-ndeogo.svelte": {
-    "file": "immutable/pages/stories/mary-ndeogo.svelte-a31d8ed7.js",
-    "src": "src/routes/stories/mary-ndeogo.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-8ccbaca9.js"
-    ],
-    "css": [
-      "immutable/assets/pages/stories/karim-zenabu.svelte-1efafefc.css"
-    ]
-  },
-  "src/routes/stories/ramatu-mahama.svelte": {
-    "file": "immutable/pages/stories/ramatu-mahama.svelte-1dd4860c.js",
-    "src": "src/routes/stories/ramatu-mahama.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-8ccbaca9.js"
-    ],
-    "css": [
-      "immutable/assets/pages/stories/karim-zenabu.svelte-1efafefc.css"
-    ]
-  },
-  "src/routes/stories/seidu-ramatu.svelte": {
-    "file": "immutable/pages/stories/seidu-ramatu.svelte-d96a9f95.js",
-    "src": "src/routes/stories/seidu-ramatu.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_index-8ccbaca9.js"
-    ],
-    "css": [
-      "immutable/assets/pages/stories/karim-zenabu.svelte-1efafefc.css"
+      "immutable/assets/pages/stories/index.svelte-b311a6e9.css"
     ]
   },
   "_index-8ccbaca9.js": {
@@ -184,5 +147,8 @@
     "imports": [
       "_index-8ccbaca9.js"
     ]
+  },
+  "_stories-8e9c98de.js": {
+    "file": "immutable/chunks/stories-8e9c98de.js"
   }
 }
